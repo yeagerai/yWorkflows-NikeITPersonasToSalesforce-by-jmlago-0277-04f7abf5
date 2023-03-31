@@ -1,0 +1,20 @@
+yaml
+components:
+    node-0:
+        class: ScrapeNikeITPersonas
+        module-path: components/scrape_nike_it_personas/scrape_nike_it_personas.py
+        configuration: !include components/scrape_nike_it_personas/configuration.yml
+    node-1:
+        class: PushToSalesforce
+        module-path: components/push_to_salesforce/push_to_salesforce.py
+        configuration: !include components/push_to_salesforce/configuration.yml
+
+flow-matrix:
+    [
+        [0, 1],
+        [0, 0]
+    ]
+
+mapper:
+    node-1.PushToSalesforce.contacts_data: node-0.ScrapeNikeITPersonas.employees_data
+    node-1.PushToSalesforce.SalesforceCredentials: Workflow.SalesforceCredentials
