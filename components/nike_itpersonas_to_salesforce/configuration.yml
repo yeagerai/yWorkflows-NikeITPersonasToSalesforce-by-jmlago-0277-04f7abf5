@@ -1,0 +1,6 @@
+description: The NikeITPersonasToSalesforce workflow is responsible for pushing Nike
+  IT personas data into Salesforce. It takes Salesforce credentials as input and pushes
+  the data to Salesforce. After successfully pushing the data, it returns a boolean
+  value 'success' and a list of created record ID.
+name: NikeITPersonasToSalesforce
+parameters: {}
