@@ -1,0 +1,6 @@
+description: 'Pushes the given data into Salesforce, mapping the ''employees_data''
+  output from the ScrapeNikeITPersonas component to ''contacts_data''. Takes the input
+  from another node: ''contacts_data'', along with the input ''SalesforceCredentials'',
+  and outputs ''created_records'' as a list of integers and ''success'' as a boolean.'
+name: PushToSalesforce
+parameters: {}
