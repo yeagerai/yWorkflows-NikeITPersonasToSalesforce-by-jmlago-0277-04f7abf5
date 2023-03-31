@@ -1,5 +1,7 @@
 description: Scrapes the web for Nike IT employees, collecting their names and emails
   if available. This component inputs nothing, and outputs the 'employees_data' as
   a list of dictionaries with keys 'name' and 'email'.
+input-class: ScrapeNikeITPersonasInputDict
 name: ScrapeNikeITPersonas
+output-class: ScrapeNikeITPersonasOutputDict
 parameters: {}
